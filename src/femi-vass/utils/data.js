@@ -2,22 +2,49 @@ export const primaryColor = "#36C4CE";
 export const secondaryColor = "#023054";
 export const dangerColor = "#da4e6a";
 
-export const USERTOKEN = process.env.REACT_APP_USERTOKEN;
-export const USERDATA = process.env.REACT_APP_USERDATA;
-export const USERACCESSCONTROL = process.env.REACT_APP_USERACCESSCONTROL;
+const REACT_APP_USERTOKEN = vas_token;
+const REACT_APP_USERDATA = vas_data;
+const REACT_APP_USERACCESSCONTROL = vas_access_control;
 
-export const baseEndpoint2 = process.env.REACT_APP_baseEndpoint2;
-export const baseCampaign = process.env.REACT_APP_baseCampaign;
-export const baseNotification = process.env.REACT_APP_baseNotificationUrl;
+const REACT_APP_baseOnboardUrl = "http://staging-1.tm30.net:8093/";
 
-export const baseProductUrl = process.env.REACT_APP_baseProductUrl;
-export const baseBillingUrl = process.env.REACT_APP_baseBillingUrl;
-export const SubscriberInterfaceBaseURL = process.env.REACT_APP_SubscriberInterfaceBaseURL;
+const REACT_APP_baseEndpoint2 =
+  "http://staging-1.tm30.net:8096/contents/api/v1/";
+const REACT_APP_baseCampaign =
+  "http://staging-1.tm30.net:8096/campaigns/api/v1/";
+const REACT_APP_baseProductUrl =
+  "http://staging-1.tm30.net:8096/products/api/v1/";
+const REACT_APP_baseBillingUrl =
+  "http://staging-1.tm30.net:8096/billings/api/v1/";
+const REACT_APP_baseUserUrl = "http://staging-1.tm30.net:8096/users/api/v1/";
+const REACT_APP_baseSubscriptionUrl =
+  "http://staging-1.tm30.net:8096/subscriptions/api/v1/";
+const REACT_APP_baseNotificationUrl = "http://staging-1.tm30.net:8096/api/";
+const REACT_APP_baseFileUploadUrl =
+  "http://staging-1.tm30.net:8096/files/v1/upload";
 
-export const baseUserUrl = process.env.REACT_APP_baseUserUrl;
-export const baseSubscriptionUrl = process.env.REACT_APP_baseSubscriptionUrl;
-export const baseFileUploadUrl = process.env.REACT_APP_baseFileUploadUrl;
-export const supportUrl = process.env.REACT_APP_SupportUrl;
+const REACT_APP_SupportUrl = "http://staging-1.tm30.net:8096/supports/api/v1/";
+const REACT_APP_ProductOnBoardUrl = "product/create";
+const REACT_APP_AccountOnBoardUrl = "provider/product/create";
+
+const REACT_APP_SubscriberInterfaceBaseURL = "http://staging-1.tm30.net:8094/";
+
+export const USERTOKEN = REACT_APP_USERTOKEN;
+export const USERDATA = REACT_APP_USERDATA;
+export const USERACCESSCONTROL = REACT_APP_USERACCESSCONTROL;
+
+export const baseEndpoint2 = REACT_APP_baseEndpoint2;
+export const baseCampaign = REACT_APP_baseCampaign;
+export const baseNotification = REACT_APP_baseNotificationUrl;
+
+export const baseProductUrl = REACT_APP_baseProductUrl;
+export const baseBillingUrl = REACT_APP_baseBillingUrl;
+export const SubscriberInterfaceBaseURL = REACT_APP_SubscriberInterfaceBaseURL;
+
+export const baseUserUrl = REACT_APP_baseUserUrl;
+export const baseSubscriptionUrl = REACT_APP_baseSubscriptionUrl;
+export const baseFileUploadUrl = REACT_APP_baseFileUploadUrl;
+export const supportUrl = REACT_APP_SupportUrl;
 
 export const categoryUrl = baseProductUrl + "category";
 export const productsUrl = baseProductUrl + "products?";
@@ -145,15 +172,13 @@ export const fileUpload = baseFileUploadUrl;
 
 export const fetchFileUpload = id => baseFileUploadUrl + id;
 
-export const zipkinUrl = (type = "") => process.env.REACT_APP_Zipkin_URL + type;
+export const zipkinUrl = (type = "") => REACT_APP_Zipkin_URL + type;
 
 export const newProductUrl = token =>
-  `${process.env.REACT_APP_baseOnboardUrl +
-    process.env.REACT_APP_ProductOnBoardUrl}?token=${token}`;
+  `${REACT_APP_baseOnboardUrl + REACT_APP_ProductOnBoardUrl}?token=${token}`;
 
 export const newProviderUrl = token =>
-  `${process.env.REACT_APP_baseOnboardUrl +
-    process.env.REACT_APP_AccountOnBoardUrl}?token=${token}`;
+  `${REACT_APP_baseOnboardUrl + REACT_APP_AccountOnBoardUrl}?token=${token}`;
 
 export const fetchFileUploadStream = id => `${baseFileUploadUrl}/stream/${id}`;
 

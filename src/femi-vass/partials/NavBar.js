@@ -16,7 +16,7 @@ import {
   walletTotalUrl,
   auditUrl
 } from "../utils/data";
-import {  withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { errorHandler } from "../../components/utils/helper";
 import { axiosFunc, formatCurrency } from "../utils/helper";
 import { Link } from "react-router-dom";

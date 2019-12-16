@@ -12,7 +12,6 @@ const AuthController = component => {
   const Authenticate = props => {
     const RenderComponent = props.component;
 
-
     const onFetchData = (status, payload) => {
       if (!status) {
         localStorage.removeItem(USERTOKEN);
@@ -27,32 +26,32 @@ const AuthController = component => {
     useEffect(() => {
       try {
         const token = localStorage.getItem(USERTOKEN);
-        if(token){
+        if (token) {
           axiosFunc(
-              "get",
-              productUrl(),
-              null,
-              {
-                Authorization: `Bearer ${localStorage.getItem(USERTOKEN)}`
-              },
-              onFetchData
+            "get",
+            productUrl(),
+            null,
+            {
+              Authorization: `Bearer ${localStorage.getItem(USERTOKEN)}`
+            },
+            onFetchData
           );
-        }
-        else{
+        } else {
           localStorage.removeItem(USERTOKEN);
           localStorage.removeItem(USERDATA);
           localStorage.removeItem(USERACCESSCONTROL);
           props.history.push(
-              `/login-admin?redirect=${encodeURIComponent(props.location.pathname)}`
+            `/login-admin?redirect=${encodeURIComponent(
+              props.location.pathname
+            )}`
           );
         }
-
-      }catch (e) {
+      } catch (e) {
         localStorage.removeItem(USERTOKEN);
         localStorage.removeItem(USERDATA);
         localStorage.removeItem(USERACCESSCONTROL);
         props.history.push(
-            `/login-admin?redirect=${encodeURIComponent(props.location.pathname)}`
+          `/login-admin?redirect=${encodeURIComponent(props.location.pathname)}`
         );
       }
     }, [RenderComponent]);
