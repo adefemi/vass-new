@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./login.css";
 import {
   FormGroup,
   Input,
@@ -21,8 +20,6 @@ import {
   AdminAccessControl,
   ServiceProviderAccessControl
 } from "../../utils/access_control";
-import "react-dates/lib/css/_datepicker.css";
-import "react-dates/initialize";
 
 function Login(props) {
   const [email, setEmail] = useState("");

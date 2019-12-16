@@ -14,9 +14,6 @@ const AuthController = component => {
 
     const onFetchData = (status, payload) => {
       if (!status) {
-        localStorage.removeItem(USERTOKEN);
-        localStorage.removeItem(USERDATA);
-        localStorage.removeItem(USERACCESSCONTROL);
         props.history.push(`/login-admin?redirect=${props.location.pathname}`);
 
         return null;
@@ -47,9 +44,6 @@ const AuthController = component => {
           );
         }
       } catch (e) {
-        localStorage.removeItem(USERTOKEN);
-        localStorage.removeItem(USERDATA);
-        localStorage.removeItem(USERACCESSCONTROL);
         props.history.push(
           `/login-admin?redirect=${encodeURIComponent(props.location.pathname)}`
         );

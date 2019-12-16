@@ -41,10 +41,6 @@ function NavBar(props) {
         fetching: false
       });
     } else {
-      Notification.bubble({
-        type: "error",
-        content: errorHandler(payload)
-      });
     }
   };
 
@@ -57,11 +53,6 @@ function NavBar(props) {
       (status, payload) => {
         if (status) {
           setAudits(payload.data.data);
-        } else {
-          Notification.bubble({
-            type: "error",
-            content: errorHandler(payload)
-          });
         }
       }
     );

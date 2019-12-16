@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "../login/login.css";
 import {
   FormGroup,
   Input,
@@ -12,8 +11,6 @@ import qs from "query-string";
 import _has from "lodash";
 import { Link } from "react-router-dom";
 import { errorHandler } from "../../../components/utils/helper";
-import "react-dates/lib/css/_datepicker.css";
-import "react-dates/initialize";
 
 function ResetPassword(props) {
   const getActiveToken = () => {
@@ -69,10 +66,6 @@ function ResetPassword(props) {
         500
       );
     } else {
-      Notification.bubble({
-        type: "error",
-        content: errorHandler(payload)
-      });
     }
   };
 

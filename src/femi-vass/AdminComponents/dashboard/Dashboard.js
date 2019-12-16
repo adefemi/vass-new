@@ -15,8 +15,8 @@ import {
   USERACCESSCONTROL
 } from "../../utils/data";
 import { Link } from "react-router-dom";
-// import Transactions from "../products/components/transactions";
-// import Subscriptions from "../products/components/subscriptions";
+import Transactions from "../products/components/transactions";
+import Subscriptions from "../products/components/subscriptions";
 import moment from "moment";
 import _empty from "lodash/isEmpty";
 
@@ -517,8 +517,9 @@ function Dashboard(props) {
           )}
         </div>
       </div>
+
       {activeTab === "dashboard" && (
-        <React.Fragment>
+        <>
           <div className="grid-auto">
             {user_access.dashboard.data.total_subscribers && (
               <Card
@@ -779,27 +780,27 @@ function Dashboard(props) {
               </Card>
             )}
           </div>
-        </React.Fragment>
+        </>
       )}
 
       {activeTab === "transactions" && (
         <React.Fragment>
-          {/*<Transactions*/}
-          {/*  {...props}*/}
-          {/*  data={null}*/}
-          {/*  activeId={"admin"}*/}
-          {/*  fetching={null}*/}
-          {/*/>*/}
+          <Transactions
+            {...props}
+            data={null}
+            activeId={"admin"}
+            fetching={null}
+          />
         </React.Fragment>
       )}
       {activeTab === "subscriptions" && (
         <React.Fragment>
-          {/*<Subscriptions*/}
-          {/*  {...props}*/}
-          {/*  data={null}*/}
-          {/*  activeId={"admin"}*/}
-          {/*  fetching={null}*/}
-          {/*/>*/}
+          <Subscriptions
+            {...props}
+            data={null}
+            activeId={"admin"}
+            fetching={null}
+          />
         </React.Fragment>
       )}
       <br />
