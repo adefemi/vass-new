@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+.form-group {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .form-group {
+    margin-bottom: 15px;
+  }
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: block;
+  color: #5d5d5d;
+}
+
+@media screen and (max-width: 480px) {
+  .form-group label {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=formGroup.css.map */

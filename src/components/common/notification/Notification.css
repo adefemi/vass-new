@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+.notification-main {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  margin-bottom: 20px;
+  z-index: 100000;
+}
+
+.notification-main > * {
+  width: unset !important;
+}
+
+.notification-main .close-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  cursor: pointer;
+  width: unset !important;
+}
+
+.notification-main .close-button > * {
+  width: unset !important;
+}
+
+.notification-main .close-button i {
+  width: unset !important;
+}
+
+.notification-main .close-button i > * {
+  width: unset !important;
+}
+
+.notification-main .close-button svg {
+  width: unset !important;
+}
+
+.notification-main .close-button svg > * {
+  width: unset !important;
+}
+
+.notification-main .icon-contain {
+  width: unset !important;
+}
+
+.notification-main .icon-contain > * {
+  width: unset !important;
+}
+
+.notification-main .icon-contain svg {
+  width: unset !important;
+}
+
+.notification-main .contents {
+  padding: 5px 20px;
+  font-size: 14px;
+}
+
+.notification-main .contents > * {
+  width: unset !important;
+}
+
+.notification-main .contents .title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.notification-main.success {
+  background-color: #49B26D;
+}
+
+.notification-main.info {
+  background-color: #49B26D;
+}
+
+.notification-main.warning {
+  background-color: #ee7511;
+}
+
+.notification-main.error {
+  background-color: #da4e6a;
+}
+
+.notification-main.default {
+  color: black;
+}
+
+.notification-main.close {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.notification-main.remove {
+  display: none !important;
+}
+
+#notification-root {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10 !important;
+  width: unset;
+}
+
+#notification-root > * {
+  width: unset !important;
+}
+
+.notification-bubble {
+  width: 500px;
+  max-width: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  -webkit-animation: animateNotificationBubble .3s ease-in-out forwards;
+          animation: animateNotificationBubble .3s ease-in-out forwards;
+}
+
+@media screen and (max-width: 480px) {
+  .notification-bubble {
+    width: unset;
+  }
+}
+
+@-webkit-keyframes animateNotificationBubble {
+  to {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@keyframes animateNotificationBubble {
+  to {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=Notification.css.map */

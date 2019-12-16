@@ -1,0 +1,213 @@
+@import "../../../components/styles/theme.scss";
+
+.productCardInfo{
+  height: 150px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title{
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    opacity: 0.7;
+  }
+
+  .mainFig{
+    font-size: 25px;
+  }
+
+  .inner-content{
+    text-align: center;
+  }
+}
+
+.category-container{
+  margin-top: 20px;
+
+  .content-heading{
+    font-weight: 500;
+    font-size: 20px;
+    color: darken($white-color, 30%);
+  }
+
+  .add-content{
+    font-weight: 300;
+    font-size: 15px;
+    color: $primary-color;
+    margin-left: 5px;
+  }
+
+  .cat-input{
+    width: 100%;
+    margin-left: 20px;
+    max-width: 530px;
+  }
+
+  .service-item{
+    flex: 1;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba($black-color, 0.1);
+    min-width: 250px;
+    max-width: 300px;
+
+    @media screen and (max-width:480px) {
+      margin-right: 0;
+      max-width: 100%;
+    }
+    .content-box{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      flex-direction: column;
+      color: rgba($secondary-color, 0.6);
+      transition: .3s ease;
+
+      img{
+        width: 100px;
+        height: 100px;
+      }
+
+      svg{
+        width: 60px !important;
+
+        path{
+          fill: rgba($secondary-color, 0.6) ;
+        }
+      }
+
+      h3{
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 20px;
+        text-transform: capitalize;
+        text-align: center;
+      }
+
+    }
+
+    ul{
+      padding: 20px;
+      color: darken($white-color, 50%);
+
+      li{
+        border-bottom: 1px solid darken($white-color, 5%);
+        padding: 10px 0;
+        font-size: 14px;
+
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  .product-item{
+    flex: 1;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba($black-color, 0.1);
+    min-width: 300px;
+    max-width: 300px;
+
+    @media screen and (max-width:480px) {
+      margin-right: 0;
+      max-width: 100%;
+    }
+    .content-box{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      flex-direction: column;
+      color: rgba($secondary-color, 0.6);
+      transition: .3s ease;
+      background-color: rgba($black-color, 0.02);
+      position: relative;
+
+      button{
+        position: absolute;
+        top: 10px;
+        right: 0;
+        outline: none;
+
+        ul{
+          padding: 0 !important;
+
+          span{
+            font-size: 12px;
+            color: darken($black-color, 60%) !important;
+          }
+        }
+      }
+
+      img{
+        width: 100px;
+        height: 100px;
+      }
+
+      svg{
+        width: 60px !important;
+
+        path{
+          fill: rgba($secondary-color, 0.6) ;
+        }
+      }
+
+
+
+    }
+
+    .content{
+      padding: 20px;
+
+      p{
+        font-size: 12px;
+        color: darken($black-color, 60%);
+      }
+
+      .content-head{
+        margin-bottom: 10px;
+
+        span{
+          font-size: 16px;
+          font-weight: 500;
+          text-transform: capitalize;
+          margin-right: 10px;
+          display: block;
+        }
+
+
+      }
+
+      .status{
+        font-size: 10px;
+        padding: 5px 10px;
+        border-radius: 20px;
+        color: white;
+        background-color: $primary-color;
+      }
+    }
+
+    ul{
+      padding: 20px;
+      color: darken($white-color, 50%);
+
+      li{
+        border-bottom: 1px solid darken($white-color, 5%);
+        padding: 10px 0;
+        font-size: 14px;
+
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

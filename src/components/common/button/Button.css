@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+.btn-main {
+  background: #36C4CE;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  background: transparent;
+  border-radius: 4px;
+  padding: 8px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn:focus,
+.btn:active,
+.btn-sml:focus,
+.btn-sml:active,
+.btn {
+  outline: none;
+  position: relative;
+  text-decoration: none;
+  -webkit-box-shadow: -3px 21px 42px -38px #5680f9;
+  box-shadow: -3px 21px 42px -38px #5680f9;
+}
+
+.btn:focus.primary,
+.btn:active.primary,
+.btn-sml:focus.primary,
+.btn-sml:active.primary,
+.btn.primary {
+  background: #36C4CE;
+  border: 2px solid #36C4CE;
+}
+
+.btn:focus.primary:hover,
+.btn:active.primary:hover,
+.btn-sml:focus.primary:hover,
+.btn-sml:active.primary:hover,
+.btn.primary:hover {
+  background: #2eb3bd;
+  border-color: #2eb3bd;
+}
+
+.btn:focus.primary.outlined,
+.btn:active.primary.outlined,
+.btn-sml:focus.primary.outlined,
+.btn-sml:active.primary.outlined,
+.btn.primary.outlined {
+  border: 2px solid #36C4CE;
+  color: #36C4CE;
+}
+
+.btn:focus.primary.outlined:hover,
+.btn:active.primary.outlined:hover,
+.btn-sml:focus.primary.outlined:hover,
+.btn-sml:active.primary.outlined:hover,
+.btn.primary.outlined:hover {
+  background: #36C4CE;
+}
+
+.btn:focus.secondary,
+.btn:active.secondary,
+.btn-sml:focus.secondary,
+.btn-sml:active.secondary,
+.btn.secondary {
+  background: #023054;
+  border: 2px solid #023054;
+}
+
+.btn:focus.secondary:hover,
+.btn:active.secondary:hover,
+.btn-sml:focus.secondary:hover,
+.btn-sml:active.secondary:hover,
+.btn.secondary:hover {
+  background: #01223b;
+  border-color: #01223b;
+}
+
+.btn:focus.secondary.outlined,
+.btn:active.secondary.outlined,
+.btn-sml:focus.secondary.outlined,
+.btn-sml:active.secondary.outlined,
+.btn.secondary.outlined {
+  border: 2px solid #023054;
+  color: #023054;
+}
+
+.btn:focus.secondary.outlined:hover,
+.btn:active.secondary.outlined:hover,
+.btn-sml:focus.secondary.outlined:hover,
+.btn-sml:active.secondary.outlined:hover,
+.btn.secondary.outlined:hover {
+  background: #023054;
+}
+
+.btn:focus.danger,
+.btn:active.danger,
+.btn-sml:focus.danger,
+.btn-sml:active.danger,
+.btn.danger {
+  background: #da4e6a;
+  border: 2px solid #da4e6a;
+}
+
+.btn:focus.danger:hover,
+.btn:active.danger:hover,
+.btn-sml:focus.danger:hover,
+.btn-sml:active.danger:hover,
+.btn.danger:hover {
+  background: #d63958;
+  border-color: #d63958;
+}
+
+.btn:focus.danger.outlined,
+.btn:active.danger.outlined,
+.btn-sml:focus.danger.outlined,
+.btn-sml:active.danger.outlined,
+.btn.danger.outlined {
+  border: 2px solid #da4e6a;
+  color: #da4e6a;
+}
+
+.btn:focus.danger.outlined:hover,
+.btn:active.danger.outlined:hover,
+.btn-sml:focus.danger.outlined:hover,
+.btn-sml:active.danger.outlined:hover,
+.btn.danger.outlined:hover {
+  background: #da4e6a;
+}
+
+.btn:focus.success,
+.btn:active.success,
+.btn-sml:focus.success,
+.btn-sml:active.success,
+.btn.success {
+  background: #49B26D;
+  border: 2px solid #49B26D;
+}
+
+.btn:focus.success:hover,
+.btn:active.success:hover,
+.btn-sml:focus.success:hover,
+.btn-sml:active.success:hover,
+.btn.success:hover {
+  background: #42a062;
+  border-color: #42a062;
+}
+
+.btn:focus.success.outlined,
+.btn:active.success.outlined,
+.btn-sml:focus.success.outlined,
+.btn-sml:active.success.outlined,
+.btn.success.outlined {
+  border: 2px solid #49B26D;
+  color: #49B26D;
+}
+
+.btn:focus.success.outlined:hover,
+.btn:active.success.outlined:hover,
+.btn-sml:focus.success.outlined:hover,
+.btn-sml:active.success.outlined:hover,
+.btn.success.outlined:hover {
+  background: #49B26D;
+}
+
+.btn:focus.default,
+.btn:active.default,
+.btn-sml:focus.default,
+.btn-sml:active.default,
+.btn.default {
+  background: #ffffff;
+  color: #101010;
+  -webkit-box-shadow: 0 2px 5px rgba(16, 16, 16, 0.1);
+          box-shadow: 0 2px 5px rgba(16, 16, 16, 0.1);
+}
+
+.btn:focus.default:hover,
+.btn:active.default:hover,
+.btn-sml:focus.default:hover,
+.btn-sml:active.default:hover,
+.btn.default:hover {
+  background: #e6e6e6;
+}
+
+.btn:focus.outlined,
+.btn:active.outlined,
+.btn-sml:focus.outlined,
+.btn-sml:active.outlined,
+.btn.outlined {
+  background: transparent;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.btn:focus.outlined:hover,
+.btn:active.outlined:hover,
+.btn-sml:focus.outlined:hover,
+.btn-sml:active.outlined:hover,
+.btn.outlined:hover {
+  color: white;
+}
+
+.btn:focus.loading,
+.btn:active.loading,
+.btn-sml:focus.loading,
+.btn-sml:active.loading,
+.btn.loading {
+  opacity: 0.7;
+}
+
+.btn:focus.loading > span,
+.btn:active.loading > span,
+.btn-sml:focus.loading > span,
+.btn-sml:active.loading > span,
+.btn.loading > span {
+  margin-right: 6px;
+}
+
+.btn:focus:hover,
+.btn:active:hover,
+.btn-sml:focus:hover,
+.btn-sml:active:hover,
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:focus:disabled,
+.btn:focus .disabled,
+.btn:active:disabled,
+.btn:active .disabled,
+.btn-sml:focus:disabled,
+.btn-sml:focus .disabled,
+.btn-sml:active:disabled,
+.btn-sml:active .disabled,
+.btn:disabled,
+.btn .disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn:focus.block,
+.btn:active.block,
+.btn-sml:focus.block,
+.btn-sml:active.block,
+.btn.block {
+  width: 100%;
+  display: block;
+}
+
+.btn:focus .icon-left,
+.btn:active .icon-left,
+.btn-sml:focus .icon-left,
+.btn-sml:active .icon-left,
+.btn .icon-left {
+  padding-right: 10px;
+}
+
+.btn:focus .content,
+.btn:active .content,
+.btn-sml:focus .content,
+.btn-sml:active .content,
+.btn .content {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=Button.css.map */

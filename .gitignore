@@ -23,3 +23,10 @@ yarn-debug.log*
 yarn-error.log*
 yarn.lock
 package-lock.json
+
+.vscode
+.vscode*
+.idea
+.idea*
+
+src/**/*.css.map

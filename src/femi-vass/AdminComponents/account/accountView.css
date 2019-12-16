@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+.goBack {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+.card-control {
+  padding: 20px;
+}
+
+.card-control .account-inner-tab {
+  background-color: #fafafa;
+  height: 100%;
+  margin-left: -20px;
+  border-right: 2px solid #36C4CE;
+  margin-right: 20px;
+  padding-bottom: 40px;
+}
+
+.card-control .account-inner-tab li {
+  font-size: 14px;
+  margin: 0;
+  padding: 10px;
+  color: #666666;
+  font-weight: 500;
+}
+
+.card-control .account-inner-tab li small {
+  font-size: 10px;
+  display: block;
+}
+
+.card-control .account-inner-tab li.active {
+  background-color: #36C4CE;
+  color: #ffffff;
+}
+
+.card-control .account-inner-tab li.active > * {
+  color: #ffffff;
+}
+
+.card-control .airtime-card {
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.card-control .airtime-card .close {
+  background: transparent;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.card-control .select-control ul > * {
+  margin: 0 !important;
+}
+
+.card-control .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.card-control .item .item-head {
+  font-weight: 300;
+  font-size: 15px;
+  color: #36C4CE;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.card-control .item .image-con {
+  width: 150px;
+  height: 150px;
+  background-color: #e6e6e6;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-control ul li {
+  font-weight: 300;
+  font-size: 13px;
+  color: #36C4CE;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.card-control ul li span {
+  margin-right: 10px;
+}
+
+.card-control .code-item .header {
+  font-weight: 300;
+  font-size: 13px;
+  color: #36C4CE;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.card-control .code-item li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 30px;
+  background-color: #cccccc;
+  margin-right: 10px;
+  color: #ffffff;
+}
+/*# sourceMappingURL=accountView.css.map */

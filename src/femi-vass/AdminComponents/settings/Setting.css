@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+.tab-heading {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* width */ }
+  .tab-heading::-webkit-scrollbar {
+    width: 12px;
+    height: 12px; }
+  .tab-heading li {
+    list-style: none;
+    padding: 0 20px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 13px;
+    font-weight: 500;
+    border-top: 1.5px solid transparent;
+    cursor: pointer;
+    color: #b3b3b3; }
+    .tab-heading li.active {
+      color: #36C4CE;
+      border-color: #36C4CE; }
+
+.tab-content .tab-item {
+  display: none;
+  padding: 20px; }
+  .tab-content .tab-item.active {
+    display: block; }
+
+.custom-flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1.5em;
+  margin-top: 10px; }
+
+.create-comp {
+  font-size: 12px;
+  font-weight: 500;
+  color: #36C4CE;
+  cursor: pointer;
+  display: flex !important;
+  align-items: center !important; }
+  .create-comp span {
+    margin-left: 5px; }
+  .create-comp div:last-child {
+    margin-top: 2px;
+    margin-left: 5px; }
+
+.category-item {
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  height: 200px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  transition: .3s ease;
+  cursor: pointer;
+  transform: scale(1); }
+  .category-item:hover {
+    transform: scale(1.1);
+    border-color: #36C4CE; }
+  .category-item .top {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .category-item .title {
+    height: 50px;
+    border-top: 1px solid #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .category-item .title .text-inner {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 150px;
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      font-weight: bold; }
+
+.breadcrum {
+  display: flex;
+  margin-bottom: 20px; }
+  @media screen and (max-width: 768px) {
+    .breadcrum {
+      margin-left: 10px; } }
+  .breadcrum a, .breadcrum li {
+    list-style: none;
+    display: block;
+    font-size: 12px;
+    color: #36C4CE !important;
+    font-family: "Montserrat", sans-serif;
+    padding: 0 15px;
+    border-right: 1px solid #e6e6e6;
+    cursor: pointer; }
+    .breadcrum a:first-child, .breadcrum li:first-child {
+      padding-left: 0; }
+    .breadcrum a:last-child, .breadcrum li:last-child {
+      border-right: none; }
+    .breadcrum a.active, .breadcrum li.active {
+      color: #999999 !important;
+      cursor: not-allowed; }
+
+.gray-text > * {
+  color: #999999 !important; }
+
+.create-category-top {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap; }
+  .create-category-top .flex-right, .create-category-top .flex-left {
+    flex: 1; }
+  .create-category-top .upload-title {
+    font-size: 12px;
+    color: #36C4CE;
+    text-align: center;
+    margin-top: 10px; }
+  .create-category-top .flex-right {
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column; }
+
+.category-view-main .flex-right, .category-view-main .flex-left {
+  min-width: 300px; }
+.category-view-main .flex-left td, .category-view-main .flex-left th {
+  padding: 10px 0;
+  font-size: 13px; }
+.category-view-main .flex-left th {
+  width: 100px;
+  font-weight: 500; }
+.category-view-main .flex-right ul {
+  margin-top: 20px; }
+  .category-view-main .flex-right ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #b3b3b3;
+    box-shadow: 0 5px 5px rgba(16, 16, 16, 0.02);
+    transition: .3s ease;
+    transform: scale(1); }
+    .category-view-main .flex-right ul li:hover {
+      transform: scale(1.05);
+      color: #36C4CE; }
+
+.img-con {
+  max-width: 40px;
+  height: 40px;
+  background-color: #e6e6e6;
+  border-radius: 50%;
+  overflow: hidden; }
+  .img-con img {
+    width: 100%;
+    height: 100%; }
+
+.image-con-large {
+  min-width: 100px !important;
+  height: 100px !important; }
+
+.image-con-large2 {
+  min-width: 150px !important;
+  height: 150px !important; }
+
+/*# sourceMappingURL=Setting.css.map */

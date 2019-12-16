@@ -1,0 +1,130 @@
+@import "../../styles/theme.scss";
+
+.notification-main {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    color: white;
+    font-family: $secondary-font;
+    box-shadow: 0 2px 5px rgba(black, 0.1);
+    transition: .3s ease;
+    margin-bottom: 20px;
+    z-index: 100000;
+
+    &>*{
+        width: unset !important;
+    }
+
+    .close-button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        cursor: pointer;
+        width: unset !important;
+
+        &>*{
+            width: unset !important;
+        }
+        i{
+            width: unset !important;
+            &>*{
+                width: unset !important;
+            }
+        }
+        svg{
+            width: unset !important;
+            &>*{
+                width: unset !important;
+            }
+        }
+    }
+
+    .icon-contain{
+        width: unset !important;
+        &>*{
+            width: unset !important;
+        }
+        svg{
+            width: unset !important;
+        }
+    }
+
+    .contents {
+        padding: 5px 20px;
+        font-size: 14px;
+
+        &>*{
+            width: unset !important;
+        }
+        .title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.notification-main.success {
+    background-color: $success-color;
+}
+
+.notification-main.info {
+    background-color: $success-color;
+}
+
+.notification-main.warning {
+    background-color: $warning-color;
+}
+
+.notification-main.error {
+    background-color: $danger-color;
+}
+
+.notification-main.default {
+    color: black;
+}
+
+.notification-main.close {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.notification-main.remove {
+    display: none !important;
+}
+
+#notification-root {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10 !important;
+    width: unset;
+
+    &>*{
+        width: unset !important;
+    }
+}
+
+
+.notification-bubble {
+    width: 500px;
+    max-width: 100%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    transition: .3s ease;
+    animation: animateNotificationBubble .3s ease-in-out forwards;
+
+    @media screen and (max-width: 480px) {
+        width: unset;
+    }
+}
+
+@keyframes animateNotificationBubble {
+    to {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

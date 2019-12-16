@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+.support-table th {
+  min-width: 100px; }
+.support-table th, .support-table td {
+  padding: 5px 0;
+  box-sizing: border-box; }
+
+.table-check {
+  display: flex;
+  align-items: center; }
+  .table-check label {
+    display: block !important;
+    bottom: 10px;
+    left: 30px; }
+
+.ticket-info {
+  position: fixed;
+  right: 0;
+  width: 500px;
+  bottom: 0;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1;
+  box-shadow: 0 5px 10px rgba(16, 16, 16, 0.07);
+  padding-top: 80px;
+  overflow: hidden; }
+  .ticket-info .close {
+    position: absolute;
+    top: 85px;
+    right: 10px;
+    color: #36C4CE;
+    cursor: pointer; }
+  .ticket-info .header-main {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    box-shadow: 0 5px 10px rgba(16, 16, 16, 0.07); }
+    .ticket-info .header-main p {
+      margin: 0 !important;
+      padding: 0 !important;
+      font-size: 13px; }
+  .ticket-info .ticket-body {
+    height: 100vh;
+    padding: 20px;
+    max-height: calc(100vh - 250px);
+    overflow: auto;
+    background-color: #f2f2f2;
+    position: relative; }
+    .ticket-info .ticket-body .replier, .ticket-info .ticket-body .creator {
+      max-width: 350px;
+      margin-bottom: 20px; }
+    .ticket-info .ticket-body .replier {
+      margin-left: 110px; }
+    .ticket-info .ticket-body .sender {
+      border-top: 1px solid #f2f2f2;
+      padding: 5px 10px;
+      font-size: 13px; }
+      .ticket-info .ticket-body .sender .user {
+        color: #36C4CE; }
+    .ticket-info .ticket-body .fileList {
+      position: absolute;
+      bottom: 0;
+      z-index: 2;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      background-color: #ffffff; }
+      .ticket-info .ticket-body .fileList img {
+        width: 50px;
+        margin-right: 10px; }
+      .ticket-info .ticket-body .fileList .fileListItem {
+        position: relative;
+        border-bottom: 1px solid #f2f2f2;
+        padding: 10px;
+        box-sizing: border-box; }
+        .ticket-info .ticket-body .fileList .fileListItem .close {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          color: #da4e6a; }
+  .ticket-info .footer-main {
+    display: flex; }
+    .ticket-info .footer-main button {
+      width: 100px;
+      height: 120px; }
+    .ticket-info .footer-main .textzone {
+      flex: 1;
+      position: relative; }
+      .ticket-info .footer-main .textzone .file-upload {
+        position: absolute;
+        z-index: 2;
+        bottom: 5px;
+        right: 5px;
+        color: #36C4CE;
+        cursor: pointer; }
+
+/*# sourceMappingURL=support.css.map */

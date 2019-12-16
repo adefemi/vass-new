@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+.modal-main {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  margin-bottom: 20px;
+  color: #101010;
+}
+
+.modal-main > * {
+  width: unset !important;
+}
+
+.modal-main .close-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  cursor: pointer;
+}
+
+.modal-main .close-button > * {
+  width: unset !important;
+}
+
+.modal-main .close-button i {
+  width: unset !important;
+}
+
+.modal-main .close-button i > * {
+  width: unset !important;
+}
+
+.modal-main .close-button svg {
+  width: unset !important;
+}
+
+.modal-main .close-button svg > * {
+  width: unset !important;
+}
+
+.modal-main .contents {
+  padding: 5px 20px;
+  font-size: 14px;
+  width: 100%;
+  color: #101010;
+}
+
+.modal-main .contents .title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.modal-main.success {
+  color: #6bc389;
+}
+
+.modal-main.info {
+  color: #034c86;
+}
+
+.modal-main.warning,
+.modal-main.confirm {
+  color: #f19141;
+}
+
+.modal-main.error {
+  color: #da4e6a;
+}
+
+.modal-main.close {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-main.close > * {
+  width: unset !important;
+}
+
+.modal-main.remove {
+  display: none !important;
+}
+
+#modal-root {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100001;
+}
+
+.modal-node {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 16, 16, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  z-index: 1;
+}
+
+.modal-bubble {
+  min-width: 300px;
+  max-width: 600px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  -webkit-box-shadow: 0 2px 5px rgba(16, 16, 16, 0.1);
+          box-shadow: 0 2px 5px rgba(16, 16, 16, 0.1);
+  -webkit-animation: animateModalBubble .3s ease-in-out forwards;
+          animation: animateModalBubble .3s ease-in-out forwards;
+}
+
+.modal-bubble .icon-contain svg {
+  width: unset !important;
+}
+
+.modal-bubble .icon-contain svg > * {
+  width: unset !important;
+}
+
+.modal-bubble .icon-contain svg rect {
+  width: 30px;
+}
+
+.modal-bubble .components {
+  width: 100%;
+  padding: 0 20px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.modal-bubble .components > * {
+  width: unset !important;
+}
+
+.modal-bubble .components .closebutt {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-left: 10px;
+}
+
+.modal-bubble .components .closebutt > * {
+  width: unset !important;
+}
+
+.modal-root-fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(16, 16, 16, 0.7);
+  z-index: 100001;
+}
+
+.modal-root-fixed .modal-bubble-fixed {
+  width: 600px;
+  max-width: 100%;
+  background-color: white;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-box-shadow: 0 2px 5px rgba(16, 16, 16, 0.1);
+          box-shadow: 0 2px 5px rgba(16, 16, 16, 0.1);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  max-height: 80vh;
+  overflow-y: auto;
+  -webkit-animation: modalBubble .3s ease-in-out forwards;
+          animation: modalBubble .3s ease-in-out forwards;
+}
+
+.modal-root-fixed .modal-bubble-fixed .close-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  cursor: pointer;
+}
+
+.modal-root-fixed .modal-bubble-fixed .title {
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(16, 16, 16, 0.1);
+}
+
+.modal-root-fixed .modal-bubble-fixed .contents {
+  padding: 20px;
+}
+
+.modal-root-fixed .modal-bubble-fixed .footer {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.modal-root-fixed .modal-bubble-fixed .footer button {
+  margin-right: 10px;
+}
+
+.modal-node.closed {
+  opacity: 0;
+}
+
+.modal-node.closed .modal-bubble {
+  -webkit-animation: animateModalOut .3s ease-in-out forwards;
+          animation: animateModalOut .3s ease-in-out forwards;
+}
+
+@-webkit-keyframes animateModalBubble {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+    margin-top: 200px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 20px;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
+@keyframes animateModalBubble {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+    margin-top: 200px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 20px;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
+@-webkit-keyframes animateModalOut {
+  from {
+    opacity: 1;
+    margin-top: 20px;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  to {
+    opacity: 0;
+    margin-top: -100px;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
+@keyframes animateModalOut {
+  from {
+    opacity: 1;
+    margin-top: 20px;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  to {
+    opacity: 0;
+    margin-top: -100px;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
+@-webkit-keyframes modalBubble {
+  to {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes modalBubble {
+  to {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+/*# sourceMappingURL=Modal.css.map */

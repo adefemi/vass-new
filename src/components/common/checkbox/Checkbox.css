@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+.Checkbox[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+.Checkbox[type="checkbox"]:checked + label {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #909090;
+}
+
+.Checkbox[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: #88dce2;
+}
+
+.Checkbox[type="checkbox"]:checked + label:after {
+  content: '';
+  width: 10px;
+  height: 5px;
+  background: transparent;
+  position: absolute;
+  border: 2px solid transparent;
+  border: solid #ffffff;
+  border-width: 0 0 2px 2px;
+  top: 6px;
+  left: 5px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.Checkbox[type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.Checkbox[type="checkbox"]:not(:checked) + label {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #909090;
+}
+
+.Checkbox[type="checkbox"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: #88dce2;
+}
+
+.Checkbox[type="checkbox"]:not(:checked) + label:after {
+  content: '';
+  width: 10px;
+  height: 5px;
+  background: transparent;
+  position: absolute;
+  border: 2px solid transparent;
+  border: solid #ffffff;
+  border-width: 0 0 2px 2px;
+  top: 6px;
+  left: 5px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.Checkbox[type="checkbox"]:disabled + label {
+  cursor: not-allowed;
+  opacity: .7;
+}
+
+.Checkbox[type="checkbox"]:disabled + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: #e6e6e6;
+}
+
+.Checkbox[type="checkbox"]:disabled + label:after {
+  content: '';
+  width: 10px;
+  height: 5px;
+  background: transparent;
+  position: absolute;
+  border: 2px solid transparent;
+  border: solid white;
+  border-width: 0 0 2px 2px;
+  top: 6px;
+  left: 5px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+/*# sourceMappingURL=Checkbox.css.map */

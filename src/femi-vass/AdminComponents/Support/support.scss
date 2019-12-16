@@ -1,0 +1,135 @@
+@import "../../../components/styles/theme";
+
+.support-table{
+  th{
+    min-width: 100px;
+  }
+  th, td{
+    padding: 5px 0;
+    box-sizing: border-box;
+  }
+}
+
+.table-check{
+  display: flex;
+  align-items: center;
+  label{
+    display: block !important;
+    bottom: 10px;
+    left: 30px;
+  }
+}
+
+.ticket-info{
+  position: fixed;
+  right: 0;
+  width: 500px;
+  bottom: 0;
+  top: 0;
+  background-color: $white-color;
+  z-index: 1;
+  box-shadow: 0 5px 10px rgba($black-color, 0.07);
+
+  padding-top: 80px;
+  overflow: hidden;
+
+  .close{
+    position: absolute;
+    top: 85px;
+    right: 10px;
+    color: $primary-color;
+    cursor: pointer;
+  }
+
+  .header-main{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    box-shadow: 0 5px 10px rgba($black-color, 0.07);
+    p{
+      margin: 0 !important;
+      padding: 0 !important;
+      font-size: 13px;
+    }
+  }
+
+  .ticket-body{
+    height: 100vh;
+    padding: 20px;
+    max-height: calc(100vh - 250px);
+    overflow: auto;
+    background-color: darken($white-color, 5%);
+    position: relative;
+
+    .replier, .creator{
+      max-width: 350px;
+      margin-bottom: 20px;
+    }
+
+    .replier{
+      margin-left: 110px;
+    }
+
+    .sender{
+      border-top: 1px solid darken($white-color, 5%);
+      padding: 5px 10px;
+      font-size: 13px;
+      .user{
+        color: $primary-color;
+      }
+    }
+
+    .fileList{
+      position: absolute;
+      bottom: 0;
+      z-index: 2;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      background-color: $white-color;
+
+      img{
+        width: 50px;
+        margin-right: 10px;
+      }
+
+      .fileListItem{
+        position: relative;
+        border-bottom: 1px solid darken($white-color, 5%);
+        padding: 10px;
+        box-sizing: border-box;
+
+        .close{
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          color: $danger-color;
+        }
+      }
+    }
+  }
+
+  .footer-main{
+    display: flex;
+    button{
+      width: 100px;
+      height: 120px;
+    }
+    .textzone{
+      flex: 1;
+      position: relative;
+      .file-upload{
+        position: absolute;
+        z-index: 2;
+        bottom: 5px;
+        right: 5px;
+        color: $primary-color;
+        cursor: pointer;
+      }
+
+    }
+
+  }
+}

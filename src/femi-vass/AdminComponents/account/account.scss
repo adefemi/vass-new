@@ -1,0 +1,74 @@
+@import "../../../components/styles/theme";
+
+.react-table{
+  border: none;
+
+  .rt-thead.-header{
+    box-shadow: none;
+  }
+
+  .rt-thead .rt-td, .rt-thead .rt-th, .rt-tbody .rt-td{
+    border-right: none !important;
+  }
+
+  .rt-tbody .rt-td{
+    padding: 0 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+
+
+  }
+
+  .rt-thead .rt-th{
+    padding: 20px 10px;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: $secondary-font;
+    color: $primary-color;
+    text-align: left;
+  }
+
+  .rt-tbody .rt-tr-group{
+    border-bottom: 1px solid darken($white-color, 3%);
+
+    transition: .3s ease;
+
+    &:hover{
+      cursor: pointer;
+      box-shadow: 0 5px 5px rgba($black-color, 0.02);
+    }
+  }
+
+  .-pagination{
+    box-shadow: none;
+  }
+}
+
+.account-tabs{
+
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid darken($white-color, 10%);
+
+  li{
+    list-style: none;
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+
+    &.active{
+      &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        height: 2px;
+        background-color: $primary-color;
+        transform: translateY(75%);
+      }
+    }
+  }
+}

@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+.select-control {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+}
+
+.select-control .left-icon {
+  padding-right: 10px;
+}
+
+.select-control .select-icon-up.closed,
+.select-control .select-icon-down.closed {
+  display: none !important;
+}
+
+.select-control .select-icon-up,
+.select-control .select-icon-down {
+  display: block;
+}
+
+.select-control .select-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  border: 1px solid #cccccc;
+  outline: none;
+  background-color: #ffffff;
+  border-radius: 2px;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.select-control .select-button select {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  outline: none;
+  width: 100%;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.select-control .select-button select:focus {
+  outline: none;
+}
+
+.select-control .select-button input.disabled {
+  cursor: not-allowed !important;
+  background-color: #ffffff;
+}
+
+.select-control .select-button i {
+  margin-bottom: 2px;
+  display: block;
+}
+
+.select-control .select-button:focus, .select-control .select-button:focus-within {
+  border-color: #36C4CE;
+}
+
+.select-control .select-button:hover {
+  border-color: #36C4CE;
+}
+
+.select-control .select-button.secondary:hover {
+  border-color: #023054;
+}
+
+.select-control .select-button.secondary:focus-within {
+  border-color: #023054;
+}
+
+.select-control .select-button.disabled:hover,
+.select-control .select-button.disabled:focus {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.select-control > * {
+  font-family: "Roboto", sans-serif;
+}
+
+.select-control .select-error-text {
+  margin-top: 5px;
+  color: #da4e6a;
+}
+
+.select-control ul {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-width: 600px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: gray;
+  background-color: #ffffff;
+  max-height: 350px;
+  overflow-y: auto;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  visibility: visible;
+  opacity: 1;
+  /* width */
+  /* Handle */
+}
+
+.select-control ul::-webkit-scrollbar {
+  width: 3px;
+}
+
+.select-control ul::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+  border-radius: 10px;
+}
+
+.select-control ul li {
+  display: block;
+  padding: 12px 10px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.select-control ul li:hover {
+  cursor: pointer;
+  background-color: #023054;
+  color: #ffffff;
+}
+
+.select-control ul.closed {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  border: none;
+}
+
+.select-control.error .select-button {
+  border-color: #da4e6a;
+}
+
+.select-control.error .select-button input {
+  color: #da4e6a;
+}
+
+.select-control.small {
+  height: 25px;
+}
+
+.select-control.small .select-button {
+  font-size: 12px;
+}
+
+.select-control.small ul {
+  max-height: 300px;
+}
+
+.select-control.small ul li {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.select-control.large {
+  height: 55px;
+}
+
+.select-control.large .select-button {
+  font-size: 18px;
+}
+
+.select-control.large ul {
+  max-height: 600px;
+}
+
+.select-control.large ul li {
+  padding: 10px;
+  font-size: 17px;
+}
+/*# sourceMappingURL=Select.css.map */

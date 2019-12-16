@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+textarea {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  min-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  display: block;
+  margin: 0;
+  outline: none;
+  font-size: 14px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background-color: #ffffff;
+}
+
+textarea:not(.textarea-error):hover {
+  border-color: #36C4CE;
+}
+
+textarea:not(.textarea-error):focus {
+  border-color: #36C4CE;
+  -webkit-box-shadow: 0 5px 10px rgba(54, 196, 206, 0.3);
+          box-shadow: 0 5px 10px rgba(54, 196, 206, 0.3);
+}
+
+textarea.secondary:hover {
+  border-color: #023054;
+}
+
+textarea.secondary:focus {
+  border-color: #023054;
+  -webkit-box-shadow: 0 5px 10px rgba(2, 48, 84, 0.3);
+          box-shadow: 0 5px 10px rgba(2, 48, 84, 0.3);
+}
+
+textarea:disabled:hover {
+  border: 1px solid #e6e6e6;
+}
+
+.textarea-error,
+.textarea-error:hover,
+.textarea-error:focus {
+  border: 1px solid #da4e6a;
+  outline: none !important;
+}
+
+.error {
+  color: #da4e6a;
+  font-size: 14px;
+}
+/*# sourceMappingURL=TextAreaField.css.map */

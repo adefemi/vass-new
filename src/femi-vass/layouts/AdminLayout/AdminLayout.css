@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+.layout-main {
+  background-color: #f9feff;
+  width: 100%;
+  height: 97vh;
+  position: relative;
+}
+
+.layout-main .side-bar {
+  position: fixed;
+  width: 200px;
+  background-color: #023054;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.layout-main .side-bar .brand {
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  background: #022d4e;
+}
+
+.layout-main .side-bar ul {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  height: calc(100vh - 100px);
+  padding-bottom: 20px;
+  /* width */
+  /* Handle */
+}
+
+.layout-main .side-bar ul::-webkit-scrollbar {
+  width: 3px;
+}
+
+.layout-main .side-bar ul::-webkit-scrollbar-thumb {
+  background: #034c86;
+  border-radius: 10px;
+}
+
+.layout-main .side-bar ul a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  text-align: left;
+  font-size: 13px;
+  color: gray;
+  padding: 30px 10px;
+  padding-left: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.layout-main .side-bar ul a .side-icon {
+  width: 50px;
+}
+
+.layout-main .side-bar ul a svg {
+  margin-left: 5px;
+}
+
+.layout-main .side-bar ul a svg path {
+  fill: gray;
+}
+
+.layout-main .side-bar ul a.active {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.layout-main .side-bar ul a.active svg path {
+  fill: #ffffff;
+}
+
+.layout-main .side-bar .down-indicator {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background-color: inherit;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.layout-main .nav-bar {
+  position: fixed;
+  width: calc(100% - 200px);
+  height: 80px;
+  background-color: #ffffff;
+  left: 200px;
+  top: 0;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 2;
+}
+
+.layout-main .nav-bar .nav-right {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.layout-main .nav-bar .nav-right li {
+  width: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  list-style: none;
+  padding: 0 20px;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #999999;
+  border-bottom: 2px solid transparent;
+}
+
+.layout-main .nav-bar .nav-right li.active {
+  color: #36c4ce;
+  border-color: #36c4ce;
+}
+
+.layout-main .nav-bar .nav-left {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.layout-main .nav-bar .nav-left select {
+  width: unset;
+  margin-left: 10px;
+  font-family: "Montserrat", sans-serif;
+  height: 30px;
+  font-size: 16px;
+  color: #6b6b6b;
+  border: none;
+  outline: none;
+}
+
+.layout-main .content-main {
+  position: absolute;
+  width: calc(100% - 200px);
+  background-color: #f9feff;
+  left: 200px;
+  top: 80px;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.layout-main .content-main.no-header {
+  top: 0;
+  height: 100vh;
+}
+/*# sourceMappingURL=AdminLayout.css.map */

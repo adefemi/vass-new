@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+.react-table {
+  border: none;
+}
+
+.react-table .rt-thead.-header {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.react-table .rt-thead .rt-td, .react-table .rt-thead .rt-th, .react-table .rt-tbody .rt-td {
+  border-right: none !important;
+}
+
+.react-table .rt-tbody .rt-td {
+  padding: 0 10px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+}
+
+.react-table .rt-thead .rt-th {
+  padding: 20px 10px;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: #36C4CE;
+  text-align: left;
+}
+
+.react-table .rt-tbody .rt-tr-group {
+  border-bottom: 1px solid #f7f7f7;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.react-table .rt-tbody .rt-tr-group:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 5px 5px rgba(16, 16, 16, 0.02);
+          box-shadow: 0 5px 5px rgba(16, 16, 16, 0.02);
+}
+
+.react-table .-pagination {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.account-tabs {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.account-tabs li {
+  list-style: none;
+  padding: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.account-tabs li.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  background-color: #36C4CE;
+  -webkit-transform: translateY(75%);
+          transform: translateY(75%);
+}
+/*# sourceMappingURL=account.css.map */
