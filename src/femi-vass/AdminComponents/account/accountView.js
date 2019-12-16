@@ -101,13 +101,6 @@ function AccountView(props) {
     }
   }, []);
 
-  const onChangeBank = e => {
-    setBankInfo({
-      ...bankInfo,
-      [e.target.name]: e.target.value
-    });
-  };
-
   const onFetchData = (status, payload) => {
     if (status) {
       let activeData = payload.data.data;
@@ -158,6 +151,10 @@ function AccountView(props) {
       });
       setBasicData({ ...basicData, status: "approve" });
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
   const onDisApproveComplete = (status, payload) => {
@@ -169,6 +166,10 @@ function AccountView(props) {
       });
       setTimeout(() => window.location.reload(), 500);
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
 

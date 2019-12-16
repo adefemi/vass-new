@@ -83,10 +83,6 @@ class UploadAdapter extends React.Component {
         return Promise.reject(error);
       });
   }
-
-  abort() {
-    // Reject promise returned from upload() method.
-  }
 }
 
 class ContentManagement extends React.Component {
@@ -240,6 +236,10 @@ class ContentManagement extends React.Component {
         content: "Content created successfully"
       });
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
 

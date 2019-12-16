@@ -66,6 +66,10 @@ function Invoice(props) {
         window.location.reload();
       }, 1000);
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
 

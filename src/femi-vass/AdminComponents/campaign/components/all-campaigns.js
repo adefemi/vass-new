@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { campaignURL, primaryColor } from "../../../utils/data";
-import {
-  Icon,
-  Input,
-  Notification,
-  Select
-} from "../../../../components/common";
+import { Icon, Input, Select } from "../../../../components/common";
 import { axiosFunc } from "../../../utils/helper";
-import { errorHandler } from "../../../../components/utils/helper";
 import moment from "moment";
 import { Pagination, Table } from "antd";
 import { NavLink } from "react-router-dom";

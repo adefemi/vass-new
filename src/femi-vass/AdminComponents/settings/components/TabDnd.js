@@ -44,6 +44,10 @@ function TabDnd(props) {
       setFile(null);
       props.setTrigger(true);
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
 
@@ -189,6 +193,10 @@ export const BlackListed = props => {
       });
       props.setTrigger(true);
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
 

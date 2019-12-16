@@ -19,6 +19,10 @@ const ResourceTab = props => {
         content: "Throughput Updated successfully"
       });
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
 

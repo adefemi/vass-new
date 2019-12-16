@@ -196,6 +196,10 @@ function Finance(props) {
       setShowModal(false);
       setInvoiceData({});
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
 

@@ -35,13 +35,7 @@ import { logout } from "../../partials/NavBar";
 const today = moment(new Date());
 const newDate = new Date();
 
-export const ChartData = (
-  dataSub,
-  dataChurn,
-  title,
-  type = "rev",
-  line = null
-) => {
+export const ChartData = (dataSub, dataChurn) => {
   let retData = [];
   if (_empty(dataSub) || dataSub.length < 1) return;
 

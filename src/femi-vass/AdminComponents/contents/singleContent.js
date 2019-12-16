@@ -8,7 +8,6 @@ import {
   secondaryColor
 } from "../../utils/data";
 import { Notification } from "../../../components/common/notification";
-import { errorHandler } from "../../../components/utils/helper";
 import ReactTable from "react-table";
 import moment from "moment";
 import { Icon } from "../../../components/common/icons";

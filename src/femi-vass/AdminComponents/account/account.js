@@ -86,7 +86,6 @@ function Account(props) {
   const [searchData, setSearchData] = useState("");
   const [filterData, setFilterData] = useState("all");
   const [product, setProduct] = useState([]);
-  const [defaultProd, setDefaultProd] = useState([]);
   const [allData, setAllData] = useState({});
   const [activeTab, setActiveTab] = useState(1);
 
@@ -94,7 +93,6 @@ function Account(props) {
     if (status) {
       let newAccounts = payload.data.data;
       setProduct(newAccounts);
-      setDefaultProd(cloneDeep(newAccounts));
       setAllData(payload.data);
       setFetching(false);
     } else {

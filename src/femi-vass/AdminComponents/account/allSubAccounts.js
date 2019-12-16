@@ -1,14 +1,8 @@
 import React, { useState, useEffect } from "react";
-import {
-  Spinner,
-  Notification,
-  Card,
-  Button
-} from "../../../components/common";
+import { Spinner, Card, Button } from "../../../components/common";
 import { primaryColor, secondaryColor, userUrl } from "../../utils/data";
 import { Pagination, Table } from "antd";
 import { axiosFunc } from "../../utils/helper";
-import { errorHandler } from "../../../components/utils/helper";
 import { Link, withRouter } from "react-router-dom";
 import AppIcon from "../../../components/common/icons/Icon";
 

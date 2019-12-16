@@ -482,6 +482,10 @@ function TabRoles(props) {
       setRoleData({});
       props.fetchRoles("reload");
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
 

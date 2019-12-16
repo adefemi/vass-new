@@ -3,8 +3,6 @@ import ListRole from "./listRole";
 import TabRoles from "./TabRoles";
 import { axiosFunc } from "../../../utils/helper";
 import { userUrl } from "../../../utils/data";
-import { Notification } from "../../../../components/common";
-import { errorHandler } from "../../../../components/utils/helper";
 
 function RoleController(props) {
   const [roles, setRoles] = useState({

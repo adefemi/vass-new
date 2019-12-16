@@ -7,7 +7,6 @@ import {
   USERACCESSCONTROL
 } from "../../utils/data";
 import { Table, Pagination } from "antd";
-import { errorHandler } from "../../../components/utils/helper";
 
 const data = (props, providers) => {
   const newArray = [];

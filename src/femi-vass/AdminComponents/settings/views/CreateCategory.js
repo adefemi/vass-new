@@ -95,6 +95,10 @@ class CreateCategory extends React.Component {
         this.props.history.push("/admin/settings?category");
       }, 500);
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
 

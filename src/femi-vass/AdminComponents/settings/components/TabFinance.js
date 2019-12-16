@@ -33,6 +33,10 @@ function TabFinance() {
         content: "Settings saved successfully"
       });
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
 

@@ -1,15 +1,8 @@
 import React, { useEffect, useState } from "react";
-import {
-  Card,
-  Icon,
-  Input,
-  Modal,
-  Notification
-} from "../../../components/common";
+import { Card, Icon, Input, Modal } from "../../../components/common";
 import { axiosFunc } from "../../utils/helper";
 import { auditUrl } from "../../utils/data";
 import { Pagination, Table } from "antd";
-import { errorHandler } from "../../../components/utils/helper";
 import moment from "moment";
 
 const data = (props, providers, onView) => {

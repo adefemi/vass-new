@@ -4,9 +4,8 @@ import {
   primaryColor,
   secondaryColor
 } from "../../../utils/data";
-import { Spinner, Notification, Icon } from "../../../../components/common";
+import { Spinner, Icon } from "../../../../components/common";
 import ReactTable from "react-table";
-import { errorHandler } from "../../../../components/utils/helper";
 import { axiosFunc } from "../../../utils/helper";
 
 const data = (props, providers) => {
@@ -49,21 +48,11 @@ const columns = [
 ];
 
 function Plan(props) {
-  const [showNetwork, setShowNetwork] = useState(false);
-  const [fetching, setFetching] = useState(true);
   const [networks, setNetworks] = useState([]);
-  const [activeNetworks, setActiveNetworks] = useState(null);
-
-  const setActiveNetwork = id => {
-    let activeChan = networks.filter(item => item.networkId === id)[0];
-    setActiveNetworks(activeChan);
-    setShowNetwork(true);
-  };
 
   const onFetchData = (status, payload) => {
     if (status) {
       setNetworks(payload.data.data);
-      setFetching(false);
     } else {
     }
   };
@@ -103,7 +92,7 @@ function Plan(props) {
           <br />
           <br />
           <ReactTable
-            data={data(props, networks, setActiveNetwork)}
+            data={data(props, networks)}
             columns={columns}
             className={"react-table"}
             defaultPageSize={networks.length < 5 ? 5 : 10}

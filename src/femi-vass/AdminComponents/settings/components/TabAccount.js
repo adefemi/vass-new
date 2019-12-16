@@ -258,6 +258,10 @@ function TabAccountSetup(props) {
       }
       setAccountInfo({});
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
 

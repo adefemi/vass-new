@@ -66,6 +66,10 @@ function ResetPassword(props) {
         500
       );
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
 

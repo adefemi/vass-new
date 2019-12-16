@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Icon, Notification, Card, Input } from "../../../../components/common";
+import { Icon, Card, Input } from "../../../../components/common";
 import {
   contentURL,
   HTML_NAIRA,
@@ -8,7 +8,6 @@ import {
 } from "../../../utils/data";
 import moment from "moment";
 import { axiosFunc, formatCurrency } from "../../../utils/helper";
-import { errorHandler } from "../../../../components/utils/helper";
 import _empty from "lodash/isEmpty";
 import { Table, Pagination } from "antd";
 import { NavLink } from "react-router-dom";
@@ -118,7 +117,6 @@ let searchTimeOut;
 function Transactions(props) {
   const [transactions, setTransactions] = useState([]);
   const [fetching, setFetching] = useState(true);
-  const [activeTransaction, setActiveTransaction] = useState({});
   const [searchData, setSearchData] = useState("");
 
   const onFetchData = (status, payload, type = null) => {
@@ -134,9 +132,7 @@ function Transactions(props) {
     }
   };
 
-  const onSetActiveTrans = obj => {
-    setActiveTransaction(obj);
-  };
+  const onSetActiveTrans = _ => {};
 
   useEffect(() => {
     if (props.activeId) {

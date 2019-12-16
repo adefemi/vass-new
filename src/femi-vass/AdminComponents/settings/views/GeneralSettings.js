@@ -78,6 +78,10 @@ function GeneralSettings(props) {
             content: "Notification saved successfully"
           });
         } else {
+          Notification.bubble({
+            type: "error",
+            content: errorHandler(payload)
+          });
         }
       }
     );

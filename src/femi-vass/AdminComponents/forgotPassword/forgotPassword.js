@@ -48,6 +48,10 @@ function ForgotPassword(props) {
           "Reset Successful, A reset link as been sent to the provided email address"
       });
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
 

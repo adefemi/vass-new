@@ -64,6 +64,10 @@ function NewCampaign(props) {
       });
       setPayload({});
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
 

@@ -95,6 +95,10 @@ class CreateNetwork extends React.Component {
         this.props.history.push("/admin/settings?network");
       });
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
 

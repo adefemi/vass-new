@@ -36,6 +36,10 @@ function TabBankAccount(props) {
       setBankInfo({});
       props.setTrigger(true);
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
 

@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Icon } from "../../../../components/common/icons";
 import {
-  primaryColor,
   productChannelConfigBaseUrl,
-  productContentConfigBaseUrl,
   productContentConfigUrl,
   secondaryColor
 } from "../../../utils/data";
@@ -13,11 +10,9 @@ import {
   FormGroup,
   Input,
   Select,
-  Notification,
   TextAreaField
 } from "../../../../components/common";
 import { axiosFunc } from "../../../utils/helper";
-import { errorHandler } from "../../../../components/utils/helper";
 
 function Configuration(props) {
   const [activeTab, setActiveTab] = useState(1);
@@ -25,7 +20,6 @@ function Configuration(props) {
   const [fetchingChan, setFetchingChan] = useState(true);
   const [fetchingCont, setFetchingCont] = useState(true);
   const [channelConfig, setChannelConfig] = useState({});
-  const [contentSub, setContentSub] = useState(false);
 
   const onFetchData = (status, payload) => {
     if (status) {
@@ -58,36 +52,6 @@ function Configuration(props) {
       onFetchData2
     );
   }, []);
-
-  const onUpdate = (status, payload) => {
-    setContentSub(false);
-
-    if (status) {
-      Notification.bubble({
-        type: "success",
-        content: "Configuration Updated successfully"
-      });
-    } else {
-    }
-  };
-
-  const updateConfig = type => {
-    let url = productContentConfigBaseUrl();
-    let data = contentConfig;
-    if (type === "channel") {
-      url = productChannelConfigBaseUrl();
-      data = channelConfig;
-    }
-
-    setContentSub(true);
-    axiosFunc(
-      "post",
-      url,
-      { productId: props.productId, ...data },
-      null,
-      onUpdate
-    );
-  };
 
   return (
     <div>

@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  Input,
-  Icon,
-  Modal,
-  Button,
-  Notification
-} from "../../../../components/common";
+import { Input, Icon, Modal, Button } from "../../../../components/common";
 import {
   fetchFileUploadStream,
   payChannelUrl,
@@ -13,7 +7,6 @@ import {
   secondaryColor
 } from "../../../utils/data";
 import { axiosFunc } from "../../../utils/helper";
-import { errorHandler } from "../../../../components/utils/helper";
 import { Table } from "antd";
 
 const data = (props, providers, showNetwork) => {

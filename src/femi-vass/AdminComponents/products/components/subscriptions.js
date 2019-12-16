@@ -150,6 +150,10 @@ function Subscriptions(props) {
       onChangePage(parseInt(subscriptions.page));
       setTimeout(() => window.location.reload(), 500);
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
 

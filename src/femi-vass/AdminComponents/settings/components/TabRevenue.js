@@ -22,7 +22,6 @@ function TabRevenueSharing(props) {
   ]);
   const [revInfo, setRevInfo] = useState([]);
   const [channel, setChannel] = useState("AIRTIME");
-  const [channels, setChannels] = useState(1);
   const [zone, setZone] = useState("");
   const [airtimeArray, setAirTimeArray] = useState([]);
   const [gatewayArray, setGatewayArray] = useState([]);
@@ -46,6 +45,10 @@ function TabRevenueSharing(props) {
         content: "Revenue sharing Updated successfully"
       });
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
 
@@ -81,7 +84,6 @@ function TabRevenueSharing(props) {
 
   const onFetchData = (status, payload) => {
     if (status) {
-      setChannels(payload.data.data);
       setAirTimeArray(
         payload.data.data.filter(item => item.type.toLowerCase() === "airtime")
       );

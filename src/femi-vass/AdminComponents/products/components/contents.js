@@ -10,8 +10,6 @@ import {
 import { Spinner } from "../../../../components/common/spinner";
 import moment from "moment";
 import { axiosFunc } from "../../../utils/helper";
-import { Notification } from "../../../../components/common/notification";
-import { errorHandler } from "../../../../components/utils/helper";
 import { Table, Pagination } from "antd";
 import { Card } from "../../../../components/common/card";
 

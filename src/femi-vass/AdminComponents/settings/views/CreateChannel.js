@@ -100,6 +100,10 @@ class CreateChannel extends React.Component {
         this.props.history.push("/admin/settings?channel");
       });
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
       this.setState({ submit: false });
     }
   };

@@ -54,12 +54,8 @@ function ProductView(props) {
   };
 
   const activeId = getActiveId();
-  const [contents, setContents] = useState([]);
   const [activeProduct, setActiveProduct] = useState(null);
-  const [fetchContents, setFetchContent] = useState(true);
-  const [subscribers, setSubscribers] = useState([]);
-  const [fetchingSubs, setFetchingSubs] = useState(false);
-  const [revenue, setRev] = useState([]);
+  const [revenue] = useState([]);
   const [fetchingRev, setFetchingRev] = useState(false);
   const [fetching, setFetching] = useState(false);
   const [subscriptions, setSubscriptions] = useState([]);
@@ -113,9 +109,6 @@ function ProductView(props) {
       if (type === "product") {
         setActiveProduct(activeData);
         setFetching(false);
-      } else if (type === "subscribers") {
-        setSubscribers(activeData);
-        setFetchingSubs(false);
       } else if (type === "revenue") {
         setSubscriptions(payload.data);
         setFetchingRev(false);
@@ -137,9 +130,6 @@ function ProductView(props) {
           revenueChart: activeData,
           fetching: false
         });
-      } else {
-        setFetchContent(false);
-        setContents(payload.data);
       }
     } else {
     }

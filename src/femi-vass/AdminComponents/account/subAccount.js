@@ -128,6 +128,10 @@ function SubAccount(props) {
       setSubAccountInfo({});
       setSubProducts({});
     } else {
+      Notification.bubble({
+        type: "error",
+        content: errorHandler(payload)
+      });
     }
   };
 

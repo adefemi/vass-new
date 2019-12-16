@@ -20,6 +20,7 @@ import {
   AdminAccessControl,
   ServiceProviderAccessControl
 } from "../../utils/access_control";
+import { errorHandler } from "../../../components/utils/helper";
 
 function Login(props) {
   const [email, setEmail] = useState("");
@@ -98,7 +99,7 @@ function Login(props) {
     } else {
       Notification.bubble({
         type: "error",
-        content: "Invalid username or password"
+        content: errorHandler(payload)
       });
       setSubmit(false);
     }
