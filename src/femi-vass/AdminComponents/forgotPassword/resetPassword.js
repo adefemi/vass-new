@@ -12,7 +12,6 @@ import qs from "query-string";
 import _has from "lodash";
 import { Link } from "react-router-dom";
 import { errorHandler } from "../../../components/utils/helper";
-import "antd/dist/antd.min.css";
 import "../../style/default.css";
 import "../settings/Setting.css";
 import "react-dates/lib/css/_datepicker.css";

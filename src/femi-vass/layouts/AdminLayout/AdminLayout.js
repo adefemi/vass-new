@@ -6,7 +6,6 @@ import NavBar from "../../partials/NavBar";
 import SideBar from "../../partials/SideBar";
 import { USERDATA } from "../../utils/data";
 import { withRouter } from "react-router-dom";
-import "antd/dist/antd.min.css";
 import "../../style/default.css";
 import "../../AdminComponents/settings/Setting.css";
 import "react-dates/lib/css/_datepicker.css";

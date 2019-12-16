@@ -21,7 +21,6 @@ import {
   AdminAccessControl,
   ServiceProviderAccessControl
 } from "../../utils/access_control";
-import "antd/dist/antd.min.css";
 import "../../style/default.css";
 import "../settings/Setting.css";
 import "react-dates/lib/css/_datepicker.css";
