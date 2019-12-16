@@ -6,7 +6,6 @@ import {
   Spinner,
   Card
 } from "../../components/common";
-import "./NavBar.css";
 import {
   USERTOKEN,
   USERDATA,
@@ -20,7 +19,7 @@ import { withRouter } from "react-router-dom";
 import { errorHandler } from "../../components/utils/helper";
 import { axiosFunc, formatCurrency } from "../utils/helper";
 import { Link } from "react-router-dom";
-import Badge from "antd/lib/badge";
+import { Badge } from "antd";
 
 export const logout = () => {
   localStorage.removeItem(USERTOKEN);

@@ -1,6 +1,8 @@
 import React, { lazy, Suspense } from "react";
 import { Route, Redirect, BrowserRouter, Switch } from "react-router-dom";
 import { Spinner } from "../components/common/spinner";
+import AdminLayout from "./layouts/AdminLayout/AdminLayout";
+import AuthController from "./HOC/authcontroller";
 import { primaryColor } from "./utils/data";
 
 const Loading = (
@@ -23,6 +25,7 @@ const ForgotPassword = lazy(() =>
 const ResetPassword = lazy(() =>
   import("./AdminComponents/forgotPassword/resetPassword")
 );
+const Dashboard = lazy(() => import("./AdminComponents/dashboard/Dashboard"));
 
 const Routes = () => (
   <BrowserRouter>
@@ -32,7 +35,21 @@ const Routes = () => (
         <Route exact path="/login-admin" component={LoginView} />
         <Route exact path="/forgot-password" component={ForgotPassword} />
         <Route exact path="/reset-password" component={ResetPassword} />
+
+        <Route
+          path="/admin"
+          render={props => (
+            <AdminLayout {...props}>
+              <Route
+                exact
+                path="/admin"
+                component={AuthController(Dashboard)}
+              />
+            </AdminLayout>
+          )}
+        />
       </Suspense>
+
       <Route path="/404" component={() => <div>404 page not found!</div>} />
       <Redirect path="*" exact to="/404" />
     </Switch>
