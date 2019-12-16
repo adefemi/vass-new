@@ -343,7 +343,7 @@ function AccountView(props) {
         {activeTabMain === 3 && (
           <Card round>
             <div className="tab-heading">
-              {(user_access.data.basic_info && user_access_profile.basicInfo) && (
+              {user_access.data.basic_info && user_access_profile.basicInfo && (
                 <li
                   className={`${activeTab === 1 && "active"}`}
                   onClick={() => setActiveTab(1)}
@@ -367,7 +367,7 @@ function AccountView(props) {
                   Revenue (per payment channel)
                 </li>
               )}
-              {(user_access.data.bank_details && user_access_profile.bankDetail) && (
+              {user_access.data.bank_details && user_access_profile.bankDetail && (
                 <li
                   className={`${activeTab === 4 && "active"}`}
                   onClick={() => setActiveTab(4)}
@@ -375,15 +375,14 @@ function AccountView(props) {
                   Bank Details
                 </li>
               )}
-              {
-                user_access_profile.subAccount && <li
-                    className={`${activeTab === 5 && "active"}`}
-                    onClick={() => setActiveTab(5)}
+              {user_access_profile.subAccount && (
+                <li
+                  className={`${activeTab === 5 && "active"}`}
+                  onClick={() => setActiveTab(5)}
                 >
                   Sub-Accounts
                 </li>
-              }
-
+              )}
             </div>
 
             <div className="tab-content">
