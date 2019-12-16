@@ -1,33 +1,48 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
-@import '~antd/dist/antd.min.css';
-.femi-controller {
+body {
+  padding: 0;
+  margin: 0;
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
-.femi-controller .input-small-top {
+
+a {
+  color: #36C4CE;
+  text-decoration: none;
+}
+
+.input-small-top {
   font-size: 10px;
   margin-top: -25px;
   margin-bottom: 20px;
 }
-.femi-controller .rt-td {
+
+.rt-td {
   overflow: unset;
 }
-.femi-controller .ck-content {
+
+.ck-content {
   min-height: 300px;
 }
-.femi-controller .link {
+
+.link {
   color: #36C4CE;
   cursor: pointer;
 }
-.femi-controller .DateRangePickerInput {
+
+.DateRangePickerInput {
   background-color: #36C4CE;
   border-radius: 10px;
   overflow: hidden;
   border: none;
 }
-.femi-controller .DateRangePickerInput_arrow_svg {
+
+.DateRangePickerInput_arrow_svg {
   fill: #ffffff;
 }
-.femi-controller .DateInput_input {
+
+.DateInput_input {
   font-size: 13px;
   font-weight: 500;
   padding: 8px;
@@ -37,7 +52,8 @@
   text-align: center;
   padding-top: 12px;
 }
-.femi-controller .settings_gear {
+
+.settings_gear {
   cursor: pointer;
   transition: 1s ease;
   transform: rotateZ(0deg);
@@ -45,240 +61,286 @@
   display: block;
   color: #49B26D;
 }
-.femi-controller .settings_gear:hover {
+.settings_gear:hover {
   transform: rotateZ(180deg);
 }
-.femi-controller .text-overflow {
+
+.text-overflow {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.femi-controller .heading-main {
+
+.heading-main {
   font-size: 18px;
   color: #36C4CE;
   font-weight: 500;
   margin-bottom: 20px;
   margin-top: 10px;
 }
-.femi-controller .heading-content {
+
+.heading-content {
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #666;
 }
-.femi-controller .btn-more {
+
+.btn-more {
   text-align: center;
   color: #b3b3b3;
   transition: 0.3s ease;
   margin-top: 20px;
 }
-.femi-controller .btn-more:hover {
+.btn-more:hover {
   color: #36C4CE;
   cursor: pointer;
 }
-.femi-controller * {
+
+* {
   width: unset;
 }
-.femi-controller a, .femi-controller a:hover {
+
+a, a:hover {
   color: unset;
 }
-.femi-controller h1,
-.femi-controller h3 {
+
+h1,
+h3 {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #666666;
 }
-.femi-controller .flex {
+
+.flex {
   display: flex;
 }
-.femi-controller .flew-wrap {
+
+.flew-wrap {
   flex-wrap: wrap;
 }
-.femi-controller .align-c {
+
+.align-c {
   align-items: center;
 }
-.femi-controller .status-badge {
+
+.status-badge {
   color: #ffffff;
   background-color: #ee7511;
   padding: 0 10px;
   border-radius: 20px;
 }
-.femi-controller .status-badge.approved {
+.status-badge.approved {
   background-color: #49B26D;
 }
-.femi-controller .status-badge.failed {
+.status-badge.failed {
   background-color: #da4e6a;
 }
-.femi-controller .justify-between {
+
+.justify-between {
   justify-content: space-between;
 }
-.femi-controller .c-pointer {
+
+.c-pointer {
   cursor: pointer;
 }
-.femi-controller .color-sec {
+
+.color-sec {
   color: #023054;
 }
-.femi-controller .color-pri {
+
+.color-pri {
   color: #36C4CE;
 }
-.femi-controller .max-width-1400 {
+
+.max-width-1400 {
   max-width: 1400px;
   margin: 0 auto;
 }
-.femi-controller .max-width-1200 {
+
+.max-width-1200 {
   max-width: 1200px;
   margin: 0 auto;
 }
-.femi-controller .content-container {
+
+.content-container {
   padding-top: 50px;
 }
-.femi-controller .content-container .content-head {
+.content-container .content-head {
   margin-bottom: 30px;
 }
-.femi-controller .content-card {
+
+.content-card {
   background: white;
   width: 100%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   margin-bottom: 30px;
 }
-.femi-controller .content-card .card-header,
-.femi-controller .content-card .card-content {
+.content-card .card-header,
+.content-card .card-content {
   padding: 20px;
   box-sizing: border-box;
 }
-.femi-controller .content-card .card-header {
+.content-card .card-header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
-.femi-controller .content-card .card-header .header-type {
+.content-card .card-header .header-type {
   padding: 10px 20px;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   margin-left: 20px;
   color: #022d4e;
   font-weight: 500;
 }
-.femi-controller .padding-20 {
+
+.padding-20 {
   padding: 20px;
 }
-.femi-controller .padding-10 {
+
+.padding-10 {
   padding: 10px;
 }
-.femi-controller .padding-h-20 {
+
+.padding-h-20 {
   padding: 0 20px;
 }
-.femi-controller .padding-l-20 {
+
+.padding-l-20 {
   padding-left: 20px;
 }
-.femi-controller .padding-0 {
+
+.padding-0 {
   padding: 0 !important;
 }
-.femi-controller .padding-0 > * {
+.padding-0 > * {
   padding: 0 !important;
 }
-.femi-controller .divider {
+
+.divider {
   width: 100%;
   border-bottom: 1px solid #f2f2f2;
 }
-.femi-controller .text-container {
+
+.text-container {
   width: 100%;
   max-width: 500px;
 }
-.femi-controller .text-container .counter {
+.text-container .counter {
   float: right;
 }
-.femi-controller .flex-1 {
+
+.flex-1 {
   flex: 1;
 }
-.femi-controller .max-width-800 {
+
+.max-width-800 {
   max-width: 800px;
 }
-.femi-controller .max-width-700 {
+
+.max-width-700 {
   max-width: 700px;
 }
-.femi-controller .max-width-600 {
+
+.max-width-600 {
   max-width: 600px;
 }
-.femi-controller .max-width-500 {
+
+.max-width-500 {
   max-width: 500px;
 }
-.femi-controller .max-width-400 {
+
+.max-width-400 {
   max-width: 400px;
 }
-.femi-controller .margin-top-20 {
+
+.margin-top-20 {
   margin-top: 20px;
 }
-.femi-controller .margin-r-20 {
+
+.margin-r-20 {
   margin-right: 20px;
 }
-.femi-controller .info {
+
+.info {
   font-size: 12px;
   color: #999999;
 }
-.femi-controller .float-r {
+
+.float-r {
   float: right;
 }
-.femi-controller .v-tab {
+
+.v-tab {
   width: 200px;
   margin-right: 20px;
   border-right: 1px solid #36C4CE;
   background-color: #fafafa;
 }
-.femi-controller .v-tab li {
+.v-tab li {
   list-style: none;
   font-size: 12px;
   padding: 10px 20px;
   cursor: pointer;
 }
-.femi-controller .v-tab li.active {
+.v-tab li.active {
   background-color: #36C4CE;
   color: #ffffff;
 }
-.femi-controller .float-r {
+
+.float-r {
   float: right;
 }
-.femi-controller .content-heading {
+
+.content-heading {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 20px;
 }
-.femi-controller .minmal {
+
+.minmal {
   width: 750px;
 }
-.femi-controller .minmal .btn-main {
+.minmal .btn-main {
   float: right;
   margin-top: 20px;
   margin-right: 40px;
 }
-.femi-controller .grid-4 {
+
+.grid-4 {
   display: grid;
   grid-gap: 2em;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
 }
-.femi-controller .grid-3 {
+
+.grid-3 {
   display: grid;
   grid-gap: 2em;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
 }
-.femi-controller .grid-2 {
+
+.grid-2 {
   display: grid;
   grid-gap: 2em;
   grid-template-columns: 1fr 1fr;
 }
 @media screen and (max-width: 768px) {
-  .femi-controller .grid-2 {
+  .grid-2 {
     grid-template-columns: 1fr;
   }
 }
-.femi-controller .grid-auto {
+
+.grid-auto {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2em;
 }
-.femi-controller .clear {
+
+.clear {
   clear: both;
 }
-.femi-controller .hide {
+
+.hide {
   display: none !important;
 }
 

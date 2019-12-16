@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import { File, Gear, Group, Level } from "../../components/common/customIcon";
 import { Icon } from "../../components/common";
 import { Link } from "react-router-dom";
-import { getUserAccess } from "../AdminComponents/finance/Finance";
-import { USERDATA } from "../utils/data";
+import { USERACCESSCONTROL, USERDATA } from "../utils/data";
 
 function SideBar(props) {
-  const [userAccess] = useState(getUserAccess());
+  const [userAccess] = useState(
+    JSON.parse(localStorage.getItem(USERACCESSCONTROL))
+  );
   const [showIndictaor, setShowIndictaor] = useState(false);
   let ulContainer = null;
   let userData = JSON.parse(localStorage.getItem(USERDATA));

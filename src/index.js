@@ -1,14 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Routes from "./femi-vass/routes";
-import { BrowserRouter, Redirect, Switch, Route } from "react-router-dom";
+import "./femi-vass/style/default.css";
 
-ReactDOM.render(
-  <BrowserRouter>
-    <Switch>
-      <Route exact path="/" render={() => <Redirect to="/admin" />} />
-      <Routes />
-    </Switch>
-  </BrowserRouter>,
-  document.getElementById("root")
-);
+ReactDOM.render(<Routes />, document.getElementById("root"));

@@ -21,8 +21,6 @@ import {
   AdminAccessControl,
   ServiceProviderAccessControl
 } from "../../utils/access_control";
-import "../../style/default.css";
-import "../settings/Setting.css";
 import "react-dates/lib/css/_datepicker.css";
 import "react-dates/initialize";
 
@@ -136,7 +134,7 @@ function Login(props) {
               onChange={e => setPassword(e.target.value)}
             />
           </FormGroup>
-          <div className={"flex align-c justify-between"}>
+          <div className="flex align-c justify-between">
             <Button type={"submit"} disabled={submit} loading={submit}>
               Login
             </Button>

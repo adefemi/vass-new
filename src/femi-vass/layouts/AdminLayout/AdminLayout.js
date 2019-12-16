@@ -4,7 +4,7 @@ import NavBar from "../../partials/NavBar";
 import SideBar from "../../partials/SideBar";
 import { withRouter } from "react-router-dom";
 import "../../style/default.css";
-import "../../AdminComponents/settings/Setting.css";
+// import "../../AdminComponents/settings/Setting.css";
 import "react-dates/lib/css/_datepicker.css";
 import "react-dates/initialize";
 import "./AdminLayout.css";

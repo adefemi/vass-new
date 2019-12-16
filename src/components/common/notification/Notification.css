@@ -3,25 +3,18 @@
   width: 100%;
   padding: 20px;
   position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
   color: white;
   font-family: "Montserrat", sans-serif;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
   margin-bottom: 20px;
   z-index: 100000;
 }
-
 .notification-main > * {
   width: unset !important;
 }
-
 .notification-main .close-button {
   position: absolute;
   right: 0;
@@ -30,48 +23,37 @@
   cursor: pointer;
   width: unset !important;
 }
-
 .notification-main .close-button > * {
   width: unset !important;
 }
-
 .notification-main .close-button i {
   width: unset !important;
 }
-
 .notification-main .close-button i > * {
   width: unset !important;
 }
-
 .notification-main .close-button svg {
   width: unset !important;
 }
-
 .notification-main .close-button svg > * {
   width: unset !important;
 }
-
 .notification-main .icon-contain {
   width: unset !important;
 }
-
 .notification-main .icon-contain > * {
   width: unset !important;
 }
-
 .notification-main .icon-contain svg {
   width: unset !important;
 }
-
 .notification-main .contents {
   padding: 5px 20px;
   font-size: 14px;
 }
-
 .notification-main .contents > * {
   width: unset !important;
 }
-
 .notification-main .contents .title {
   font-size: 16px;
   font-weight: 600;
@@ -114,7 +96,6 @@
   z-index: 10 !important;
   width: unset;
 }
-
 #notification-root > * {
   width: unset !important;
 }
@@ -124,22 +105,12 @@
   max-width: 100%;
   margin-right: 20px;
   margin-bottom: 20px;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-  -webkit-animation: animateNotificationBubble .3s ease-in-out forwards;
-          animation: animateNotificationBubble .3s ease-in-out forwards;
+  transition: 0.3s ease;
+  animation: animateNotificationBubble 0.3s ease-in-out forwards;
 }
-
 @media screen and (max-width: 480px) {
   .notification-bubble {
     width: unset;
-  }
-}
-
-@-webkit-keyframes animateNotificationBubble {
-  to {
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
 }
 
@@ -149,4 +120,5 @@
     margin-bottom: 20px;
   }
 }
+
 /*# sourceMappingURL=Notification.css.map */
