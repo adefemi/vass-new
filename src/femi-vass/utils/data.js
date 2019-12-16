@@ -2,9 +2,9 @@ export const primaryColor = "#36C4CE";
 export const secondaryColor = "#023054";
 export const dangerColor = "#da4e6a";
 
-const REACT_APP_USERTOKEN = vas_token;
-const REACT_APP_USERDATA = vas_data;
-const REACT_APP_USERACCESSCONTROL = vas_access_control;
+const REACT_APP_USERTOKEN = "vas_token";
+const REACT_APP_USERDATA = "vas_data";
+const REACT_APP_USERACCESSCONTROL = "vas_access_control";
 
 const REACT_APP_baseOnboardUrl = "http://staging-1.tm30.net:8093/";
 
@@ -171,8 +171,6 @@ export const contentByServiceURL = (type = "") =>
 export const fileUpload = baseFileUploadUrl;
 
 export const fetchFileUpload = id => baseFileUploadUrl + id;
-
-export const zipkinUrl = (type = "") => REACT_APP_Zipkin_URL + type;
 
 export const newProductUrl = token =>
   `${REACT_APP_baseOnboardUrl + REACT_APP_ProductOnBoardUrl}?token=${token}`;
